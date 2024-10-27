@@ -17,5 +17,13 @@ function boundaries_EventListener(){
     }
 }
 
+function game_EventListener(){
+    var game = document.getElementById("game")
+    game.addEventListener("mouseout",function(){
+        alert("You should stay in the game!\nGame reloaded.")
+        location.reload()
+    })
+}
+
 var start = document.getElementById("start")
 start.addEventListener('mouseover',start_game)
