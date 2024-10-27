@@ -1,14 +1,11 @@
 
-function testing(){
+function start_game(){
     var end = document.getElementById("end")
     end.addEventListener('mouseover',function(){
         alert("You Win")
         location.reload()})
     boundaries_EventListener()
 }
-
-var start = document.getElementById("start")
-start.addEventListener('mouseover',testing)
 
 function boundaries_EventListener(){
     var boundaries = document.querySelectorAll(".boundary")
@@ -19,3 +16,6 @@ function boundaries_EventListener(){
             location.reload()})
     }
 }
+
+var start = document.getElementById("start")
+start.addEventListener('mouseover',start_game)
