@@ -7,3 +7,7 @@ function testing(){
 var start = document.getElementById("start")
 start.addEventListener('mouseover',testing)
 
+function boundaries_EventListener(){
+    var boundaries = document.querySelectorAll(".boundary")
+    
+}
