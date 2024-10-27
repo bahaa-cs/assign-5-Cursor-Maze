@@ -1,10 +1,12 @@
 
 function start_game(){
+    game_EventListener()
     var end = document.getElementById("end")
     end.addEventListener('mouseover',function(){
         alert("You Win")
         location.reload()})
     boundaries_EventListener()
+    
 }
 
 function boundaries_EventListener(){
@@ -19,8 +21,8 @@ function boundaries_EventListener(){
 
 function game_EventListener(){
     var game = document.getElementById("game")
-    game.addEventListener("mouseout",function(){
-        alert("You should stay in the game!\nGame reloaded.")
+    game.addEventListener("mouseleave",function(){
+        alert("Stay in the game section!\nGame reloaded.")
         location.reload()
     })
 }
